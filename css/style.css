@@ -1,0 +1,274 @@
+*{
+  margin: 0px; padding:0px;
+  
+}
+
+body{
+  width:1000px;
+  margin:0px auto; /*가운데 정렬*/
+}
+
+
+html{
+  background-color: rgba(238, 238, 238, 0.133);
+
+}
+
+a{
+  text-decoration: none;
+  color : black;
+}
+
+
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+ul{
+  margin: 0px; padding: 0px;
+}
+
+li{
+  list-style: none;
+}
+
+img{
+  border: 0px; margin: 0px; padding:0px;
+}
+
+
+
+
+.top_content{
+  width: 960px;
+  height: 960px; /* 수정할 부분*/
+  position: relative;
+  margin-bottom: 10px;
+  /*background-color: rgba(63, 63, 63, 0.103); /*지울부분*/
+}
+
+
+.logo h1{
+  top:100px;
+  text-align: center;
+  width: 960px;
+  height: 200px;
+  line-height: 70px;
+  /*background-color: azure;*/
+  font-family: 'Gugi', cursive;
+  font-size: 35px;
+  position: relative;
+
+}
+
+.logo a:hover{
+  color: #4990e6;
+}
+
+.top_nav1{
+  color: black;
+  top: 15px;
+  right: 10px;
+  position: absolute;
+  font-family: 'Nanum Gothic', sans-serif; 
+}
+
+.top_nav1 a{
+  display: inline-block;
+  padding: 5px 5px;
+  font-weight: 900;
+}
+
+.top_nav1 a:hover{
+  color: gray; 
+  border-radius: 5px;/*모서리 둥굴게*/
+}
+
+
+
+.main_nav{
+  bottom: 10px;
+  top: 250px; 
+  width: 960px;
+  text-align: center;
+  position: absolute;
+  display: block;
+ /* border-bottom: 2px solid rgb(186, 186, 186);
+  border-top: 2px solid rgb(186, 186, 186);*/
+  padding: 8px 8px;
+  line-height: 30px;
+  height: 30px;
+  text-align: center;
+  
+}
+
+
+.main_nav > a { /* a 태그는 인라인레벨이라 위아래 적용 X */
+  display: inline-block; /*블록 속성은 가지지만 인라인레벨처럼 위아래 설정은 못함*/
+  font-size: 0.9rem;
+}
+
+.main_nav li{
+  text-align: center;
+  display: inline-block;
+  margin-left: 60px;
+ 
+}
+
+.main_nav li> a:hover{
+  padding: 6px;
+  color: white; 
+  background-color: black;
+  border-radius: 8px;/*모서리 둥굴게*/
+ 
+}
+
+/*
+.main_nav input {
+  bottom:42px;
+  left: 600px; 
+  vertical-align: middle;
+  width: 300px;
+  height: 30px;
+  background:white;
+  position: relative;
+
+}
+
+.main_nav input.form_text {
+  border: 2px solid #bcbcbc;
+  height: 30px;
+}
+
+input.img_btn {
+  border: none;
+  width: 100px;
+  height:  100px;
+  cursor: pointer;
+
+}
+
+*/
+
+
+.inner_search {
+  position: relative;
+  width: 200px;
+  height: 40px;
+  margin: 20px auto;
+  border: 3px solid #bdc1c6;
+  top:200px;
+  bottom:300px;
+}
+
+
+.container{ /* display:flex; ->  부보에만 설정*/
+  bottom: 530px;;
+  width: 960px;
+  justify-content:space-between; /*양쪽 끝에 이미지 붙이고 나머지 여백을 조정*/
+  position:relative;
+  display: flex; /*자식배치와 관련된 것을 사용하겠다*/
+ /*background-color: antiquewhite; /*확인용*/
+  
+}
+
+.container> a:hover img {
+  filter:opacity(70%);
+  width: 300px;
+  height: 300px;
+}
+
+img{ /*자식*/
+  width: 300px;
+  height: 300px;
+}
+
+.container p{
+  text-align: center;
+  margin-top: 10px;
+  font-size: 20px;
+
+}
+.main_text{
+text-align: center;
+position:relative;
+bottom: 600px;;
+width: 960px;
+
+}
+
+
+footer{
+  width: 1000px;
+  position: relative;
+  top: 150px; 
+}
+
+.addr{
+  width: 1000px;
+  text-align: center;
+  border-top:2px solid rgb(186, 186, 186);
+  padding: 5px;
+  height: auto;
+}
+
+
+.addr li{
+  /*수정할부분*/
+  height: 22px;
+  line-height: 22px;
+  margin-top: 2px;
+}
+
+
+.left_post{
+  float: left;
+}
+
+.left_post>h1{
+  font-family: 'Gugi', cursive;
+  top: 100px;
+  margin-right: 40px;
+  position: relative;
+  bottom: 480px;
+  height: 40px;
+  line-height: 40px;
+}
+
+
+
+.main_left{
+  width: 450px;
+  height: 300px;
+  border:1px solid gray;
+  border-radius: 10px;
+  float: left;
+  background-color: rgb(248, 248, 244);
+}
+
+
+.main_right{
+  float: left;
+  width: 450px;
+  height: 300px;
+  border-radius: 10px;
+  margin-left: 40px;
+  border:1px solid gray;
+  background-color: rgb(248, 248, 244);
+}
+
+
+.section{
+  position: absolute; 
+  top:1000px;
+}
+
+.section h1{
+    font-size: 30px;
+    font-family: 'PyeongChangPeace-Light';
+    font-weight: 300;
+    font-style: normal;
+    position: relative;
+    bottom: 65px;
+}

@@ -1,0 +1,59 @@
+.login{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 450px;
+  height: 200px;
+  border-bottom:1px gray ;
+
+}
+
+.login ul{
+  padding: 0px;
+  margin: 0px;
+  
+}
+
+.login li{
+  border-bottom:1px gray ;
+   
+}
+
+.login_btn{
+
+  width: 400px;
+  height: 200px;
+ text-align: center;
+ line-height: 30px;
+}
+
+
+.login_btn1 li{
+  border-radius: 2px;
+  background-color: rgb(0, 0, 0);
+  margin-bottom: 10px;
+  padding-top:5px;
+  padding-bottom: 5px;
+  color: white;
+}
+
+
+.login_btn2 li{
+  color: black;
+  border-radius: 2px;
+  background-color: rgb(231, 231, 231);
+  border:1px gray;
+  padding-top:5px;
+  padding-bottom: 5px;
+  
+}
+
+.xbtn{
+  width: 50px;
+  height: 50px;
+  position: relative;
+  left: 500px;
+  bottom:50px;
+}
